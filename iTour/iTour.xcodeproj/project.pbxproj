@@ -15,6 +15,7 @@
 		472B5B182AE4AACE00F7A6A9 /* EditDestinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B5B172AE4AACE00F7A6A9 /* EditDestinationView.swift */; };
 		472B5B1A2AE4C71C00F7A6A9 /* DestinationListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B5B192AE4C71C00F7A6A9 /* DestinationListingView.swift */; };
 		472B5B1C2AE4DD8700F7A6A9 /* Sight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472B5B1B2AE4DD8700F7A6A9 /* Sight.swift */; };
+		4775BD432AE6148800248AF2 /* SightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4775BD422AE6148800248AF2 /* SightsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		472B5B172AE4AACE00F7A6A9 /* EditDestinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditDestinationView.swift; sourceTree = "<group>"; };
 		472B5B192AE4C71C00F7A6A9 /* DestinationListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationListingView.swift; sourceTree = "<group>"; };
 		472B5B1B2AE4DD8700F7A6A9 /* Sight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sight.swift; sourceTree = "<group>"; };
+		4775BD422AE6148800248AF2 /* SightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			children = (
 				472B5B1B2AE4DD8700F7A6A9 /* Sight.swift */,
 				472B5B192AE4C71C00F7A6A9 /* DestinationListingView.swift */,
+				4775BD422AE6148800248AF2 /* SightsView.swift */,
 				472B5B172AE4AACE00F7A6A9 /* EditDestinationView.swift */,
 				472B5B072AE4A20700F7A6A9 /* iTourApp.swift */,
 				472B5B092AE4A20700F7A6A9 /* ContentView.swift */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				472B5B0A2AE4A20700F7A6A9 /* ContentView.swift in Sources */,
+				4775BD432AE6148800248AF2 /* SightsView.swift in Sources */,
 				472B5B082AE4A20700F7A6A9 /* iTourApp.swift in Sources */,
 				472B5B162AE4A29400F7A6A9 /* Destination.swift in Sources */,
 				472B5B1C2AE4DD8700F7A6A9 /* Sight.swift in Sources */,

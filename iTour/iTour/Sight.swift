@@ -7,6 +7,7 @@
 
 // inverse relationship.  Must be optional
 // better to do it explicitly in Destination.swfit
+// Very cool!
 
 import SwiftData
 
