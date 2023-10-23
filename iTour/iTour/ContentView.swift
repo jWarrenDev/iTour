@@ -35,7 +35,6 @@ struct ContentView: View {
             .navigationDestination(for: Destination.self, destination: EditDestinationView.init)
     
             .toolbar {
-                Button("Add Samples", action: addSamples)
                 Button("Add Destination", systemImage: "plus", action: addDestination)
                 
                 Menu("Sort", systemImage: "arrow.up.arrow.down") {
@@ -69,19 +68,7 @@ struct ContentView: View {
             }
         }
     }
-    
-    func addSamples() {
-        let rome = Destination(name: "Rome")
-        let florence = Destination(name: "Florence")
-        let naples = Destination(name: "Naples")
-        
-        modelContext.insert(rome)
-        modelContext.insert(florence)
-        modelContext.insert(naples)
-    }
-    
-  
-    
+
     func addDestination() {
         let destination = Destination()
         modelContext.insert(destination)
