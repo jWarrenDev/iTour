@@ -28,7 +28,7 @@ struct DestinationListingView: View {
             if searchString.isEmpty {
                 return $0.date > minimumDate
             } else {
-                return $0.name.localizedStandardContains(searchString)
+                return $0.name.localizedStandardContains(searchString) && $0.date > minimumDate
             }
         },sort: sort)
         
@@ -58,5 +58,5 @@ struct DestinationListingView: View {
 }
 
 #Preview {
-    DestinationListingView(sort: [SortDescriptor(\Destination.name)], searchString: "", minimumDate: Date.now)
+    DestinationListingView(sort: [SortDescriptor(\Destination.name)], searchString: "", minimumDate: Date.distantPast)
 }

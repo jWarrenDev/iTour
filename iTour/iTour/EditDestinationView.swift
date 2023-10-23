@@ -17,11 +17,15 @@ import SwiftUI
 struct EditDestinationView: View {
     // MARK: - if I just watnted to READ
     //    var destination: Destination
-    
+    @Environment(\.modelContext) private var modelContext
     @Bindable var destination: Destination
     @State private var newSightName = ""
-   
-    @Environment(\.modelContext) private var modelContext
+
+    var sortedSights: [Sight] {
+        destination.sights.sorted {
+            $0.name < $1.name
+        }
+    }
     
     var body: some View {
         Form {
@@ -39,7 +43,7 @@ struct EditDestinationView: View {
             }
             
             Section("Sight") {
-                ForEach(destination.sights) { sight in
+                ForEach(sortedSights) { sight in
                     Text(sight.name)
                 }
                 .onDelete(perform: deleteSights)
@@ -69,11 +73,9 @@ struct EditDestinationView: View {
     
     func deleteSights(_ indexSet: IndexSet) {
         for index in indexSet {
-            var sight = destination.sights[index]
+            let sight = sortedSights[index]
             modelContext.delete(sight)
         }
-        
-        destination.sights.remove(atOffsets: indexSet)
     }
 }
 
